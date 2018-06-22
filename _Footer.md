@@ -1,1 +1,1 @@
-Trace is an open source project, started by WSP Australia. 
+Trace is an open source project started by WSP Australia. Contributions are welcome from anyone.
