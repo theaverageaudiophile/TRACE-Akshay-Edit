@@ -8,11 +8,13 @@ The button 'Rw Curve' inserts two functions. The function `RwRate` finds the cor
 
 **Rw** is a rating curve defined in *ISO717.1 - Acoustics - Rating of sound insulation in buildings and of building elements -- Part 1: Airborne sound insulation*. The standard defines a family of curves of the same shape and the rules for rating a given set of transmission loss data against the set of curves. 
 
-`Rw_ThOct = Array(33, 36, 39, 42, 45, 48, 51, 52, 53, 54, 55, 56, 56, 56, 56, 56)`
+`Rw_ThOct = Array(33, 36, 39, 42, 45, 48, 51, 52, 53, 54, 55, 56, 56, 56, 56, 56)'Rw52 Curve`
 
 `Rw_Oct = Array(36, 45, 52, 55, 56)`
 
-![RwCurves](img/RwCurves.png)
+The name/value of a particular curve is given by the value at the 500Hz band. 
+
+![RwCurves.png](https://github.com/Moosevellous/Trace/blob/master/img/RwCurves.png)
 
 ### RwRate
 `Function RwRate(DataTable As Variant, Optional Mode As String)`
