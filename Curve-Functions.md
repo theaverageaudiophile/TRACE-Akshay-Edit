@@ -12,7 +12,7 @@ The button 'Rw Curve' inserts two functions. The function `RwRate` finds the cor
 
 `Rw_Oct = Array(36, 45, 52, 55, 56)`
 
-[[https://github.com/Moosevellous/Trace/RwCurves.png]]
+![RwCurves](img/RwCurves.png)
 
 ### RwRate
 `Function RwRate(DataTable As Variant, Optional Mode As String)`
