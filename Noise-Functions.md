@@ -51,5 +51,46 @@ From ASHRAE tables:
 ### Duct Split
 ### Silencer
 ### Acoustic Louvres
+## Room Loss
+### Classic
+`Function GetRoomLoss(fstr As String, L As Double, W As Double, H As Double, roomType As String)`
 
+**Values for alpha**
+
+| Room Type | 63Hz | 125Hz | 250Hz | 500Hz | 1kHz | 2kHz | 4kHz |
+|---|---|---|---|---|---|---|---|
+| Live | 0.2 |  0.18 |  0.14 |  0.11 |  0.1 |  0.1 |  0.1 |  0.1 |  0.1 | 
+| Av. Live   | 0.19 |  0.18 |  0.17 |  0.14 |  0.15 |  0.15 |  0.14 |  0.13 |  0.12 | 
+| Average | 0.2 |  0.18 |  0.19 |  0.19 |  0.2 |  0.23 |  0.22 |  0.21 |  0.2 | 
+| Av. Dead | 0.21 |  0.2 |  0.23 |  0.24 |  0.25 |  0.28 |  0.27 |  0.26 |  0.25 | 
+| Dead | 0.22 |  0.2 |  0.28 |  0.3 |  0.4 |  0.47 |  0.45 |  0.44 |  0.45 | 
+
+`alpha_av = ((L * W * alpha(bandIndex) * 2) + (L * H * alpha(bandIndex) * 2) + (W * H * alpha(bandIndex) * 2)) / S_total`
+
+`Rc = (S_total * alpha(bandIndex)) / (1 - alpha_av)`
+
+`GetRoomLoss = 10 * Application.WorksheetFunction.Log10(4 / Rc)`
+
+### RT method
+
+`Function GetRoomLossRT(fstr As String, L As Double, W As Double, H As Double, RT_Type As String)`
+
+**Values for alpha**
+
+| Room Type | 31.5Hz | 63Hz | 125Hz | 250Hz | 500Hz | 1kHz | 2kHz | 4kHz | 8Khz |
+|---|---|---|---|---|---|---|---|---|---|
+| <0.2sec | 0 |  0 |  0.21 |  0.277 |  0.331 |  0.385 |  0.435 |  0.446 |  0 | 
+| 0.2 to 0.5sec | 0 |  0 |  0.125 |  0.138 |  0.183 |  0.233 |  0.288 |  0.296 |  0 | 
+| 0.5 to 1sec | 0 |  0 |  0.109 |  0.112 |  0.137 |  0.18 |  0.214 |  0.225 |  0 | 
+| 1 to 1.5sec | 0 |  0 |  0.057 |  0.056 |  0.058 |  0.069 |  0.08 |  0.082 |  0 | 
+| 1.5 to 2sec | 0 |  0 |  0.053 |  0.053 |  0.06 |  0.08 |  0.095 |  0.1 |  0 | 
+| >2sec | 0 |  0 |  0.063 |  0.052 |  0.036 |  0.041 |  0.035 |  0.04 |  0 | 
+
+`alpha_av = ((L * W * alpha(bandIndex) * 2) + (L * H * alpha(bandIndex) * 2) + (W * H * alpha(bandIndex) * 2)) / S_total`
+
+`Rc = (S_total * alpha(bandIndex)) / (1 - alpha_av)`
+
+`GetRoomLoss = 10 * Application.WorksheetFunction.Log10(4 / Rc)`
+
+### Room constant
 ## Direct / Reverberant Sum
