@@ -2,7 +2,7 @@
 
 The button NR curve inserts two functions. The function `NRRate` finds the corresponding NR curve for the row above. The function `NRCurve` returns the values of the curve at each octave band.
 
-## NR Rate
+## NRrate
 
 `Function NR_rate(DataTable As Variant, Optional fstr As String)`
 
@@ -19,7 +19,7 @@ The values of a given NR curve at each frequency is given by:
 
 `NRcurve = A_f+(B_f*Curve_no)`
 
-### NR Curve
+### NRcurve
 `Function NRcurve(Curve_no As Integer, fstr As String)`
 
 Some applications for various NR curves are:
@@ -37,7 +37,7 @@ Some applications for various NR curves are:
 
 # NC
 
-## NC Curve
+## NCcurve
 
 `Function NCcurve(Curve_no As Integer, fstr As String)`
 
@@ -52,10 +52,10 @@ The button 'Rw Curve' inserts two functions. The function `RwRate` finds the cor
 
 **Rw** is a rating curve defined in *ISO717.1 - Acoustics - Rating of sound insulation in buildings and of building elements -- Part 1: Airborne sound insulation*. The standard defines a family of curves of the same shape and the rules for rating a given set of transmission loss data against the set of curves. 
 
-| Reference curve | 100   | 125   | 160   | 200   | 250  | 315  | 400  | 500  | 630  | 800  | 1k   | 1.25k | 1.6k | 2k   | 2.5k | 3.15k |
+| Reference curve (Rw52) | 100   | 125   | 160   | 200   | 250  | 315  | 400  | 500  | 630  | 800  | 1k   | 1.25k | 1.6k | 2k   | 2.5k | 3.15k |
 |-------|-------|-------|-------|-------|------|------|------|------|------|------|------|-------|------|------|------|-------|
-| 1/3 octave band | 33   | 36   | 39   | 42   | 45  | 48  | 51  | **52**  | 53  | 54  | 55  | 56   | 56  | 56  | 56  | 56   |
-| Octave band |       | 36   |       |       | 45  |      |      | **52**  |      |      | 55  |       |      | 56  |      |       |
+| 1/3 Octave Band | 33   | 36   | 39   | 42   | 45  | 48  | 51  | **52**  | 53  | 54  | 55  | 56   | 56  | 56  | 56  | 56   |
+| Octave Band |       | 36   |       |       | 45  |      |      | **52**  |      |      | 55  |       |      | 56  |      |       |
 
 The name/value of a particular curve is given by the value at the 500Hz band. 
 
@@ -71,19 +71,20 @@ or
 
 The function adds each band that is below the curve to `SumDeficiencies`. If the result is less than the allowable sum of deficiencies, the curve is moved up by 1dB and the process loops. Once the maximum allowable sum of deficiencies is exceeded, the curve is moved down 1dB (as this sum of deficiencies is not allowed). 
 
-## C<sub>tr</sub> Rate
+## C<sub>tr</sub>Rate
 
 `Function CtrRate(DataTable As Variant, rw As Integer)`
+
+
+
 
 # L<sub>nw</sub>
 
 The Lnw rating curve is defined in *ISO717.2 Acoustics - Rating of sound insulation in buildings and of building elements  -- Part 2: Impact sound insulation*. The standard defines a family of curves of the same shape, and the rules for rating a given set of impact sound measurements against the set of curves. 
 
-|   | 100 | 125 | 160 | 200 | 250 | 315 | 400 | 500 | 630 | 800 | 1k | 1.25k | 1.6k | 2k | 2.5k | 3.15k |
-|---|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|----|-------|------|----|------|-------|
-|Lnw62   | 62  | 62  | 62  | 62  | 62  | 62  | 61  | 60  | 59  | 58  | 57 | 54    | 51   | 48 | 45   | 42    |
+## LnwRate
 
-## Lnw Rate
+`Function LnwRate(DataTable As Variant)`
 
 *ISO717.2* requires that the corresponding curve have a sum of deficiencies less than:
 - 32 dB (in one third octave bands)
@@ -92,6 +93,11 @@ or
 
 The function adds each band that is below the curve to `SumDeficiencies`. If the result is less than the allowable sum of deficiencies, the curve is moved down by 1dB and the process loops. Once the maximum allowable sum of deficiencies is exceeded, the curve is moved up 1dB (as this sum of deficiencies is not allowed). 
 
-## Lnw Curve
+## LnwCurve
 
 `Function LnwCurve(CurveNo As Variant, fstr As String) 'Optional Mode As String)`
+
+| Reference Curve L<sub>nw</sub>60 | 100 | 125 | 160 | 200 | 250 | 315 | 400 | 500 | 630 | 800 | 1k | 1.25k | 1.6k | 2k | 2.5k | 3.15k |
+|---|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|----|-------|------|----|------|-------|
+|1/3 Octave Band| 62  | 62  | 62  | 62  | 62  | 62  | 61  | 60  | 59  | 58  | 57 | 54    | 51   | 48 | 45   | 42    |
+|Octave Band |    |62   |   |   |62 |  |  | 60 |  |  |  57  |  |  |48 | | |
