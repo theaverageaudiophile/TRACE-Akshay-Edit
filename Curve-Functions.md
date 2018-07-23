@@ -93,6 +93,8 @@ or
 
 The function adds each band that is below the curve to `SumDeficiencies`. If the result is less than the allowable sum of deficiencies, the curve is moved down by 1dB and the process loops. Once the maximum allowable sum of deficiencies is exceeded, the curve is moved up 1dB (as this sum of deficiencies is not allowed). 
 
+![LnwCurves](https://github.com/Moosevellous/Trace/blob/master/img/LnwCurves.png)
+
 ## LnwCurve
 
 `Function LnwCurve(CurveNo As Variant, fstr As String) 'Optional Mode As String)`
@@ -101,3 +103,5 @@ The function adds each band that is below the curve to `SumDeficiencies`. If the
 |---|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|----|-------|------|----|------|-------|
 |1/3 Octave Band| 62  | 62  | 62  | 62  | 62  | 62  | 61  | 60  | 59  | 58  | 57 | 54    | 51   | 48 | 45   | 42    |
 |Octave Band |    |62   |   |   |62 |  |  | 60 |  |  |  57  |  |  |48 | | |
+
+
