@@ -11,3 +11,10 @@ All Blank Calculation Sheets and [Standard Calculation Sheets](https://github.co
 This function is called from other parts of **Trace** and can be used in any cell (even non-Trace sheets), once the add-in is installed.
 
 # SPLAV
+
+# A-weighting
+More fully explained by [Wikipedia](https://en.wikipedia.org/wiki/A-weighting), the A-weighting is an attempt to correct a linear spectrum to the frequency response of the human ear. Originally built based on the 40 phon loudness curve, the A-weighting is now used for most noise measurements. 
+
+A possible substitute curve could be
+
+`=10*LOG(((35041384000000000*E$6^8)/((20.598997^2+E$6^2)^2*(107.65265^2+E$6^2)*(737.86223^2+E$6^2)*(12194.217^2+E$6^2)^2)))`
