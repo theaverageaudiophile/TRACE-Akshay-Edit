@@ -1,6 +1,9 @@
 # Fan Simple
-`Function LwFanSimple(freq As String, v As Double, P As Double, FanType As String)
-`
+
+`Function LwFanSimple(freq As String, v As Double, P As Double, FanType As String)`
+
+![frmFanSimple.jpg](https://github.com/Moosevellous/Trace/blob/master/img/frmFanSimple.JPG)
+
 From Biess and Hansen, the overall Sound Power of a fan can be approximated by:
 
 Lw=10log(v)+20log(P)+40
@@ -24,7 +27,12 @@ The following spectral corrections apply to different fan types:
 | Variable inlet vanes - 60% | 8 |  7 |  6 |  5 |  5 |  5 |  5 | 
 | Variable inlet vanes - 40% | 3 |  2 |  1 |  0 |  0 |  0 |  1 | 
 
+
+
 # Pump Simple
 # Cooling Tower
+
+![frmEstCoolingTower.jpg](https://github.com/Moosevellous/Trace/blob/master/img/frmEstCoolingTower.JPG)
+
 # Electric Motor
 # Compressor
