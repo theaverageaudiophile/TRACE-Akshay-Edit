@@ -30,6 +30,14 @@ The following spectral corrections apply to different fan types:
 
 
 # Pump Simple
+
+| Speed range(RPM) | Equation | --- |
+| --- | --- | --- |
+|  | Under 75kW | Above 75kW |
+
+![frmEstPumpLw.jpg](https://github.com/Moosevellous/Trace/blob/master/img/frmEstPumpLw.JPG)
+
+
 # Cooling Tower
 
 | Type | Equation |  
