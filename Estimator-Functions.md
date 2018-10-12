@@ -32,6 +32,13 @@ The following spectral corrections apply to different fan types:
 # Pump Simple
 # Cooling Tower
 
+| Type | Equation |  
+| --- | --- |
+| Propeller <75kW | 100+8log(kW) |
+| Propeller >75kW | 96+10log(kW) |
+| Centrifugal <60kW | 85+11log(kW)|
+| Centrifugal >60kW | 93+7log(kW) |
+
 ![frmEstCoolingTower.jpg](https://github.com/Moosevellous/Trace/blob/master/img/frmEstCoolingTower.JPG)
 
 # Electric Motor
