@@ -16,8 +16,6 @@ The function loops through each element of `ParamArray` and uses the worksheet f
 
 `SPLSUM = 10 * Application.WorksheetFunction.Log10((10 ^ (SPLSUM / 10)) + (10 ^ (Rng1(i) / 10)))`
 
-The formula
-
 # SPLAV
 
 `Public Function SPLAV(ParamArray Rng1() As Variant) As Variant`
