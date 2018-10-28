@@ -35,26 +35,27 @@ The button `Area Correction` applies the formula to all octave bands or one-thir
 
 End Reflection Loss (ERL) happens as sound waves in the low end of the frequency spectrum exit a duct into a large room, some of that sound energy gets reflected back into the duct.
 
-There are two types of duct terminations defined in the ASHRAE handbook, Chapter 48 _”Noise and Vibration Control”_:
-
-**Flush**
-Defined by the following formula
-
-**Free Space**
-Defined by the following formula
-
-freq is converted to a value using the Trace function `freqStr2Num(freq)`
-
-The formula for End reflection loss is given in the ASHRAE Handbook:
+The formula for End reflection loss is given in the ASHRAE handbook, Chapter 48 _”Noise and Vibration Control”_:
 
 `GetERL = -10*log10(1 + ((A1 + c0) / (f * dia * Pi)) ^ A2)`
 
-From ASHRAE tables:
+There are two types of duct terminations defined in the handbook:
+
+- Flush
+- Free Space
+
+The duct termination changes the coefficients A1 and A2, as follows:
 
 |   | Flush | Free |
 |---|---|---|
 |A1 | 0.7 | 1 |
 |A2 | 2 | 2 |
+
+Note that the variable `freq` is converted to a value using the Trace function `freqStr2Num(freq)`
+
+
+
+
 
 ### Regenerated noise
 ### Elbow / Bend
