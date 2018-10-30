@@ -1,15 +1,21 @@
-[Home](https://github.com/Moosevellous/Trace/wiki)
+### [Home](https://github.com/Moosevellous/Trace/wiki)
 
-[Curves](https://github.com/Moosevellous/Trace/wiki/Curve-Functions)
+### [Curves](https://github.com/Moosevellous/Trace/wiki/Curve-Functions)
 
-[Estimator Functions](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions)
+### [Estimator Functions](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions)
 
-[Noise Functions](https://github.com/Moosevellous/Trace/wiki/Noise-Functions)
+### [Noise Functions](https://github.com/Moosevellous/Trace/wiki/Noise-Functions)
 
-[Other Features](https://github.com/Moosevellous/Trace/wiki/Other-Features)
+[Distance attenuation](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#distance-attenuation)
 
-[Program Structure](https://github.com/Moosevellous/Trace/wiki/Program-Structure)
+[Mech elements](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#mech-elements)
 
-[Row Functions](https://github.com/Moosevellous/Trace/wiki/Row-Functions)
+[Room Loss](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#room-loss)
 
-[Standard Calculations](https://github.com/Moosevellous/Trace/wiki/Standard-Calculations)
+### [Other Features](https://github.com/Moosevellous/Trace/wiki/Other-Features)
+
+### [Program Structure](https://github.com/Moosevellous/Trace/wiki/Program-Structure)
+
+### [Row Functions](https://github.com/Moosevellous/Trace/wiki/Row-Functions)
+
+### [Standard Calculations](https://github.com/Moosevellous/Trace/wiki/Standard-Calculations)
