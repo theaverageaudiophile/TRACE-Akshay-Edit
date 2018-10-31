@@ -31,11 +31,23 @@ The following spectral corrections apply to different fan types:
 
 # Pump Simple
 
-| Speed range(RPM) | Equation | --- |
+From Table 11.10 of *Engineering Noise Control* (Biess and Hansen)
+
+| Speed range(RPM) | Equation |  |
 | --- | --- | --- |
 |  | Under 75kW | Above 75kW |
+| 3000-3600 | 72+10log(kW) | 86+3log(kW) |
+| 1600-1800 | 75+10log(kW) | 89+3log(kW) |
+| 1000-1500 | 70+10log(kW) | 84+3log(kW) |
+| 450-900 | 68+10log(kW) | 82+3log(kW) |
 
 ![frmEstPumpLw.jpg](https://github.com/Moosevellous/Trace/blob/master/img/frmEstPumpLw.JPG)
+
+The corrections to derive sound pressure at 1 metre are as follows:
+
+| Octave Band | 31.5 | 63 | 125 | 250 | 500 | 1k | 2k | 4k | 8k |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Correction | -13 | -12 | -11 | -9 | -9 | -6 | -9 | -13 | -19 |
 
 
 # Cooling Tower
