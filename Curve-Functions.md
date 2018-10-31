@@ -50,7 +50,7 @@ The button 'Rw Curve' inserts two functions. The function `RwRate` finds the cor
 
 `Function RwCurve(CurveNo As Variant, fstr As String) `
 
-**Rw** is a rating curve defined in *ISO717.1 - Acoustics - Rating of sound insulation in buildings and of building elements -- Part 1: Airborne sound insulation*. The standard defines a family of curves of the same shape and the rules for rating a given set of transmission loss data against the set of curves. 
+**R<sub>w</sub>** is a rating curve defined in *ISO717.1 - Acoustics - Rating of sound insulation in buildings and of building elements -- Part 1: Airborne sound insulation*. The standard defines a family of curves of the same shape and the rules for rating a given set of transmission loss data against the set of curves. 
 
 | Reference curve (Rw52) | 100   | 125   | 160   | 200   | 250  | 315  | 400  | 500  | 630  | 800  | 1k   | 1.25k | 1.6k | 2k   | 2.5k | 3.15k |
 |-------|-------|-------|-------|-------|------|------|------|------|------|------|------|-------|------|------|------|-------|
@@ -71,16 +71,26 @@ or
 
 The function adds each band that is below the curve to `SumDeficiencies`. If the result is less than the allowable sum of deficiencies, the curve is moved up by 1dB and the process loops. Once the maximum allowable sum of deficiencies is exceeded, the curve is moved down 1dB (as this sum of deficiencies is not allowed). 
 
-## C<sub>tr</sub>Rate
+## CtrRate
 
 `Function CtrRate(DataTable As Variant, rw As Integer)`
 
+**C<sub>tr</sub>** is a correction for the spectral characteristics of traffic noise. The function uses the spectral adaptation terms from *ISO717.1 - Acoustics - Rating of sound insulation in buildings and of building elements -- Part 1: Airborne sound insulation*. 
 
+|Reference Curve| 100   | 125   | 160   | 200 | 250 | 315 | 400 | 500 | 630 | 800  | 1k   | 1.25k | 1.6k | 2k  | 2.5k | 3.15k |
+|-----|-------|-------|-------|-----|-----|-----|-----|-----|-----|------|------|-------|------|-----|------|-------|
+| 1/3 Octave Band | -20 | -20 | -18 | -16 | -15 | -14 | -13 | -12 | -11 | -9 | -8 | -9  | -10  | -11 | -13  | -15  |
+|  Octave Band |     | -14 |     |     | -10 |     |     | -7  |     |    | -4 |     |      |  -6 |      |      |
 
+The function logarithmically subtracts the input Transmission Loss Spectrum `DataTable` from the reference spectrum shown in the table above. 
 
-# L<sub>nw</sub>
+`X_A_ji = -10*log(10^((L_ij - X_1)/10)))`
 
-The Lnw rating curve is defined in *ISO717.2 Acoustics - Rating of sound insulation in buildings and of building elements  -- Part 2: Impact sound insulation*. The standard defines a family of curves of the same shape, and the rules for rating a given set of impact sound measurements against the set of curves. 
+The final C<sub>tr</sub> value is the difference between this value and the single number value (**R<sub>w</sub>, R'<sub>w</sub> D<sub>nTw</sub>** etc...). 
+
+# Lnw
+
+The L<sub>nw</sub> rating curve is defined in *ISO717.2 Acoustics - Rating of sound insulation in buildings and of building elements  -- Part 2: Impact sound insulation*. The standard defines a family of curves of the same shape, and the rules for rating a given set of impact sound measurements against the set of curves. 
 
 ## LnwRate
 
