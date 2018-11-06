@@ -2,11 +2,14 @@
 This module is at the heart of Trace, and does the most heavy lifting, computationally. It is expected that this section of Trace will have the most development as more functions are requested from acoustic engineers and implemented as needs arise.
 
 ## Air Absorption
+
 `Private Function AirAbsorb(freq As String, Distance As Integer, temp As Integer)`
 
 Air absorption varies over frequency with the following values (from 63Hz octave band)
 
-`Absorption=Array(0.1,0.3,1.1,2.8,5,9,22.9,76.6) 'per km`
+|  - | 63Hz | 125Hz | 250Hz | 500Hz | 1kHz | 2kHz | 4kHz | 8kHz |
+| --- | - | - | - | - | - | - | - | - |
+| Insertion loss per km, dB |0.1 | 0.3 | 1.1 | 2.8 | 5 | 9 | 22.9 | 76.6 |  
 
 Absorption is assumed to be a loss and is therefore input as a negative value.
 
