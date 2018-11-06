@@ -61,6 +61,45 @@ Note that the variable `freq` is converted to a value using the Trace function `
 ### Elbow / Bend
 ### Duct Split
 ### Silencer
+
+Silencers are special ducts with perforated sound absorptive linings, containing elements to channel the air. These elements are known as 'splitters' or 'pods'. Silencers are designed to reduce noise travelling down ducts, but may also be used to reduce sound transmitted between spaces, also known as *crosstalk*.
+
+![RectSilencer.png](https://github.com/Moosevellous/Trace/blob/master/img/RectSilencer.png)
+
+The splitters or pods reduce the cross-sectional area (open area) of the duct, thereby inducing a static pressure on the system. Silencers typically come in both rectangular and circular cross sections, varying lengths, and varying open face areas. A smaller open area results in a larger static pressure on the system, and vice versa.
+
+![SilencerCrossSection.png](https://github.com/Moosevellous/Trace/blob/master/img/SilencerCrossSection.png)
+
+The `Silencer` function in **Trace** can either provide the insertion loss for a silencer given a known model code, or can test all silencer models to find those which meet a given noise target. All silencer data is taken from the Fantech silencer database. This data is stored in
+
+- ...*Trace_directory*\Silencers.txt
+
+This file contains a list of octave band insertion losses for a number of silencers, as well as the model number, length, and free area (percentage).
+Refer to [https://www.fantech.com.au/attenuator.aspx](https://www.fantech.com.au/attenuator.aspx) for the default data set. Additional rows of data may be added to the text file from any source, provided it follows the same layout.
+
+#### Search by model number
+
+In order to search for a known silencer model:
+- Type the part of the model number which is  known (RS, RT, 15C etc...)
+- Hit enter or click the 'Search' button. The list will then be searched for matching text strings.
+- Select a model within the search results. The insertion loss, free area %, and the length are shown.
+- Click 'Insert' to add the silencer to the spreadsheet.
+
+#### Solver
+
+The solver function takes the following inputs:
+
+`Function SolveForSilencer(SilRng As String, targetRng As String, NRGoal As Boolean, NoiseGoal As Double)`
+
+In order to use the ‘find suitable silencer’ function:
+
+- Define the 'silencer range' as any cell in the calculation row where the silencer is to be inserted.
+- Set the 'target range' to any cell in the row where noise criteria has been calculated (usually the final line in the calculation).
+- Select either the 'Overall dBA' or 'NR' to define the Noise Goal.
+- Click 'Search'. The function will then search for a suitable silencer by testing the list of options against the Noise Goal.
+- Select a model within the search results. The insertion loss, free area %, and the length are shown.
+- Click 'Insert' to add the silencer to the spreadsheet.
+
 ### Acoustic Louvres
 ## Room Loss
 ### Classic
