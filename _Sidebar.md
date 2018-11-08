@@ -18,4 +18,6 @@
 
 ### [Row Functions](https://github.com/Moosevellous/Trace/wiki/Row-Functions)
 
+### [Sheet Functions](https://github.com/Moosevellous/Trace/wiki/Sheet-Functions)
+
 ### [Standard Calculations](https://github.com/Moosevellous/Trace/wiki/Standard-Calculations)
