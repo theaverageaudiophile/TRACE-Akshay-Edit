@@ -38,7 +38,7 @@ The button `Area Correction` applies the formula to all octave bands or one-thir
 
 End Reflection Loss (ERL) happens as sound waves in the low end of the frequency spectrum exit a duct into a large room, some of that sound energy gets reflected back into the duct.
 
-The formula for End reflection loss is given in the ASHRAE handbook, Chapter 48 _”Noise and Vibration Control”_:
+The formula for End Reflection Loss is given in the ASHRAE handbook, Chapter 48 _”Noise and Vibration Control”_:
 
 `GetERL = -10*log10(1 + ((A1 + c0) / (f * dia * Pi)) ^ A2)`
 
