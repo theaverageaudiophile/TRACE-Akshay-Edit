@@ -31,6 +31,11 @@ The button `Area Correction` applies the formula to all octave bands or one-thir
 
 ## Mech Elements
 ### ASHRAE Duct
+
+Sound attenuation and insertion losses of sheet metal ducts are outlined in 2015 ASHRAE Handbook – HVAC Applications (SI) – Chapter 48 Sound & Vibration Control. The handbook provides the insertion loss values of a given duct size at each frequency is given by:
+—	Dimensions of duct – width and height (in mm)
+—	Length of duct (in m)
+
 ### Flex Duct
 ### End Reflection Loss (ERL)
 
