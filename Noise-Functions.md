@@ -32,9 +32,41 @@ The button `Area Correction` applies the formula to all octave bands or one-thir
 ## Mech Elements
 ### ASHRAE Duct
 
-Sound attenuation and insertion losses of sheet metal ducts are outlined in 2015 ASHRAE Handbook – HVAC Applications (SI) – Chapter 48 Sound & Vibration Control. The handbook provides the insertion loss values of a given duct size at each frequency is given by:
-—	Dimensions of duct – width and height (in mm)
-—	Length of duct (in m)
+`Function GetASHRAE(freq As String, W As Double, H As Double, XXX As String, L As String)`
+
+Sound attenuation and insertion losses of sheet metal ducts are outlined in ASHRAE handbook, Chapter 48 _”Noise and Vibration Control”_. The handbook provides the insertion loss values of a given duct size at each frequency is given by:
+
+- Dimensions of duct – width and height (in mm)
+- Length of duct (in m)
+
+The insertion loss values are provided in the following tables:
+
+1. Unlined rectangular sheet metal ducts
+
+| Duct size, mm | 63Hz | 125Hz | 250Hz | >250Hz |
+| - | - | - | - | - |
+| 150 x 150 | 0.98 | 0.66 | 0.33 | 0.33 |
+| 305 x 305 | 1.15 | 0.66 | 0.33 | 0.20 |	
+| 305 x 610 | 1.31 | 0.66 | 0.33 | 0.16 |		
+| 610 x 610 | 0.82 | 0.66 | 0.33 | 0.10	|
+| 1220 x 1220 | 0.49 | 0.33 | 0.23 | 0.07 |	
+| 1830 x 1830 | 0.33 | 0.33 | 0.16 | 0.07 |	
+
+2. Rectangular sheet metal ducts with 25mm fibreglass lining
+
+3. Rectangular sheet metal ducts with 50mm fibreglass lining
+
+4. Unlined straight round ducts
+
+| Diameter | 63 | 125 | 250 | 500 | 1000 | 2000 | 4000 |
+| - | - | - | - | - | - | - | - |		
+| 180 | 0.1 | 0.1 | 0.16 | 0.16 | 0.33 | 0.33 |	0.33 |		
+| 380 | 0.1 | 0.1 | 0.1 | 0.16 | 0.23 | 0.23 | 0.23 |	
+| 760 | 0.07 | 0.07 | 0.07 | 0.1 | 0.16 | 0.16 | 0.16|		
+| 1520 | 0.03 | 0.03 | 0.03 | 0.07 | 0.07 | 0.07 | 0.07 |	
+
+5. Acoustically lined round ducts with 25mm lining
+6. Acoustically lined round ducts with 50mm lining
 
 ### Flex Duct
 ### End Reflection Loss (ERL)
