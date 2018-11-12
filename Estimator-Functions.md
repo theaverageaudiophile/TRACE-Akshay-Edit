@@ -52,6 +52,20 @@ The corrections to derive sound pressure at 1 metre are as follows:
 
 # Cooling Tower
 
+Cooling towers are pieces of mechanical plant used in many air conditioning systems to cool the water used in the compressor coils. This is achieved by blowing air through a stream of water, whereby the evaporation of some of this water will lead to cooling of the remaining water.
+
+There are four main types of cooling tower configuration which must be considered:
+- Centrifugal fan
+  - Blow-through type
+  - Axial flow
+- Propeller-type
+  - Induced draft
+  - Forced draft, ‘underflow’
+
+<img src="https://github.com/Moosevellous/Trace/blob/master/img/CoolingTowerTypes.JPG" width="600">
+
+The noise levels can be estimated by knowing the operating power of the cooling tower, as well as whether it is a centrifugal or propeller type. Note that the subtypes above are for the consideration of blow through effects only.
+
 | Type | Equation |  
 | --- | --- |
 | Propeller <75kW | 100+8log(kW) |
@@ -59,7 +73,44 @@ The corrections to derive sound pressure at 1 metre are as follows:
 | Centrifugal <60kW | 85+11log(kW)|
 | Centrifugal >60kW | 93+7log(kW) |
 
-![frmEstCoolingTower.jpg](https://github.com/Moosevellous/Trace/blob/master/img/frmEstCoolingTower.JPG)
+<img src="https://github.com/Moosevellous/Trace/blob/master/img/CoolingTowerPowerPlot.png" width="800">
+
+In order to convert this overall SPL to a set of octave band SPLs, the following conversion factors should be applied:
+
+|    Cooling tower type    |    31.5    |    63    |    125    |    250    |    500    |    1k     |    2k     |    4k     |    8k     |
+|--------------------------|------------|----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+|    Propeller Type        |    -8      |    -5    |    -5     |    -8     |    -11    |    -15    |    -18    |    -21    |    -29    |
+|    Centrifugal Type      |    -6      |    -6    |    -8     |    -10    |    -11    |    -13    |    -12    |    -18    |    -25    |
+
+Additionally, there are directional effects to be considered for the cooling towers when we measure the sound power level on a specific side. These effects should only be considered where the distance of measurement is >6m and are given in B&H Table 11.8 as:
+
+|    Type of tower and   location of measurement    |    31.5    |    63    |    125    |    250    |    500    |    1k    |    2k    |    4k     |    8k    |
+|------------------------|-----------|----------|-----------|-----------|-----------|----------|----------|-----------|----------|
+|    **Centrifugal fan blow through**          |            |          |           |           |           |          |          |           |          |
+|    Front                                          |    3       |    3     |    2      |    3      |    4      |    3     |    3     |    4      |    4     |
+|    Side                                           |    0       |    0     |    0      |    -2     |    -3     |    -4    |    -5    |    -5     |    -5    |
+|    Rear                                           |    0       |    0     |    -1     |    -2     |    -3     |    -4    |    -5    |    -6     |    -6    |
+|    Top                                            |    -3      |    -3    |    -2     |    0      |    1      |    2     |    3     |    4      |    5     |
+|    **Axial flow, blow through**                   |            |          |           |           |           |          |          |           |          |
+|    Front                                          |    2       |    2     |    4      |    6      |    6      |    5     |    5     |    5      |    5     |
+|    Side                                           |    1       |    1     |    1      |    -2     |    -5     |    -5    |    -5    |    -5     |    -4    |
+|    Rear                                           |    -3      |    -3    |    -4     |    -7     |    -7     |    -7    |    -8    |    -11    |    -3    |
+|    Top                                            |    -5      |    -5    |    -5     |    -5     |    -2     |    0     |    0     |    2      |    4     |
+|   **Induced draft, propeller type**          |            |          |           |           |           |          |          |           |          |
+|    Front                                          |    0       |    0     |    0      |    1      |    2      |    2     |    2     |    3      |    3     |
+|    Side                                           |    -2      |    -2    |    -2     |    -3     |    -4     |    -4    |    -5    |    -6     |    -6    |
+|    Top                                            |    3       |    3     |    3      |    3      |    2      |    2     |    2     |    1      |    1     |
+|    **Underflow forced drafter propeller type**      |            |          |           |           |           |          |          |           |          |
+|    Any side                                       |    -1      |    -1    |    -1     |    -2     |    -2     |    -3    |    -3    |    -4     |    -4    |
+|    Top                                            |    2       |    2     |    2      |    3      |    3      |    4     |    4     |    5      |    5     |
+
+In cases where the measurement is to be taken close to the intake or discharge (< 6m), data is available but it appears to be independent of the power of the plant and so has not been considered here.
+
+The **Trace** estimator tool looks like this:
+
+![frmEstCoolingTower.JPG](https://github.com/Moosevellous/Trace/blob/master/img/frmEstCoolingTower.JPG)
+
+And implements all the corrections defined above. 
 
 # Electric Motor
 # Compressor
