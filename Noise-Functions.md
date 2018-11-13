@@ -104,9 +104,10 @@ Note that the variable `freq` is converted to a value using the Trace function `
 
 Silencers are special ducts with perforated sound absorptive linings, containing elements to channel the air. These elements are known as 'splitters' or 'pods'. Silencers are designed to reduce noise travelling down ducts, but may also be used to reduce sound transmitted between spaces, also known as *crosstalk*.
 
-![RectSilencer.png](https://github.com/Moosevellous/Trace/blob/master/img/RectSilencer.png)
+![RectSilencer.png](https://github.com/Moosevellous/Trace/blob/master/img/RectSilencer.png) ![CircSilencer.png](https://github.com/Moosevellous/Trace/blob/master/img/CircSilencer.png) 
 
-The splitters or pods reduce the cross-sectional area (open area) of the duct, thereby inducing a static pressure on the system. Silencers typically come in both rectangular and circular cross sections, varying lengths, and varying open face areas. A smaller open area results in a larger static pressure on the system, and vice versa.
+
+The splitters or pods reduce the cross-sectional area (open area) of the duct, thereby inducing a static pressure on the system. Silencers typically come in both rectangular and circular cross sections, varying lengths, and varying open face areas. A smaller open area results in a larger static pressure on the system, and vice versa. 
 
 ![SilencerCrossSection.png](https://github.com/Moosevellous/Trace/blob/master/img/SilencerCrossSection.png)
 
