@@ -23,4 +23,4 @@
 ### [Standard Calculations](https://github.com/Moosevellous/Trace/wiki/Standard-Calculations)
 
 ***
-###[Design Principles](https://github.com/Moosevellous/Trace/wiki/Design Principles)
+### [Design Principles](https://github.com/Moosevellous/Trace/wiki/Design-Principles)
