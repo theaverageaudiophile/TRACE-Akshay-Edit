@@ -5,5 +5,4 @@
 - All losses are to be shown as negative numbers.
 - Blank Calculation Sheets and Standard Calculation Sheets are to be printable with a layout suitable for fitting to standard paper sizes.
 - All sheets are to have a standard header block layout.
-- User input cells is to be ‘post-it’ yellow RGB (251, 251, 143).
-- Final answer is be in ‘friendly’ blue RGB (146, 205, 220).
+- User input elements are to be ‘post-it’ yellow RGB (251, 251, 143).
