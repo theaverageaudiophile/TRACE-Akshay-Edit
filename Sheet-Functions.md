@@ -12,7 +12,7 @@ Clears the cells in the header block of their values.
 
 Makes borders of cells look consistent. The default format looks like this:
 
-**PLACEHOLDER**
+![Borders.jpg](https://github.com/Moosevellous/Trace/blob/master/img/Borders.JPG)
 
 # Plot
 
@@ -24,8 +24,9 @@ Generates a plot of the rows selected and applied the following formatting:
 - Scales the graph to have good proportions
 
 # Heat Map
-Green = Less
-Red = More
+Uses conditional formatting to generate a heat map of values. 
+- Green = Less
+- Red = More
 
 # Fix References
-Excel formulas sometimes point to places they shouldn't. In case they do this, select a cell with the formula error and click the Fix References button. The part of the formula bounded by apostrophes and exclamation marks (this is the reference bit) is replaced with an empty string "". This usually fixes things.
+Excel formulas sometimes point to places they shouldn't. In case they do this, select a cell with the formula error and click the Fix References button. The part of the formula bounded by apostrophes and exclamation marks (this is the reference bit) is replaced with an empty string (""). This usually fixes things.
