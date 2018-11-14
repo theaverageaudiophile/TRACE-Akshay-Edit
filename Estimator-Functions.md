@@ -31,7 +31,11 @@ The following spectral corrections apply to different fan types:
 
 # Pump Simple
 
-From Table 11.10 of *Engineering Noise Control* (Biess and Hansen)
+Pumps are pieces of mechanical plant which move a fluid through a system. The motor on the pump is usually the main source of noise. 
+
+![CentrifPump.png](https://github.com/Moosevellous/Trace/blob/master/img/CentrifPump.png)
+
+To estimate the sound levels from pumps, the estimator tool uses the method from  _Engineering Noise Control_ (Bies and Hansen) Table 11.10: 
 
 | Speed range(RPM) | Equation |  |
 | --- | --- | --- |
@@ -40,6 +44,8 @@ From Table 11.10 of *Engineering Noise Control* (Biess and Hansen)
 | 1600-1800 | 75+10log(kW) | 89+3log(kW) |
 | 1000-1500 | 70+10log(kW) | 84+3log(kW) |
 | 450-900 | 68+10log(kW) | 82+3log(kW) |
+
+The Pump estimator tool looks like this:
 
 ![frmEstPumpLw.jpg](https://github.com/Moosevellous/Trace/blob/master/img/frmEstPumpLw.JPG)
 
@@ -106,7 +112,7 @@ Additionally, there are directional effects to be considered for the cooling tow
 
 In cases where the measurement is to be taken close to the intake or discharge (< 6m), data is available but it appears to be independent of the power of the plant and so has not been considered here.
 
-The **Trace** estimator tool looks like this:
+The Cooling Tower estimator tool looks like this:
 
 ![frmEstCoolingTower.JPG](https://github.com/Moosevellous/Trace/blob/master/img/frmEstCoolingTower.JPG)
 
