@@ -21,3 +21,6 @@
 ### [Sheet Functions](https://github.com/Moosevellous/Trace/wiki/Sheet-Functions)
 
 ### [Standard Calculations](https://github.com/Moosevellous/Trace/wiki/Standard-Calculations)
+
+***
+###[Design Principles](https://github.com/Moosevellous/Trace/wiki/Design Principles)
