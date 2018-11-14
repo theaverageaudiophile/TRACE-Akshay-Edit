@@ -1,0 +1,9 @@
+- Where possible, the full equation is to be written out, except where:
+  - Empirical relationships exist / lookup tables are required; or
+  - the full equation is difficult to read as an inline function.
+- Units (eg 10 m<sup>2</sup>,Q=2) are presented as custom formatting with the cell.
+- All losses are to be shown as negative numbers.
+- Blank Calculation Sheets and Standard Calculation Sheets are to be printable with a layout suitable for fitting to standard paper sizes.
+- All sheets are to have a standard header block layout.
+- User input cells is to be ‘post-it’ yellow RGB (251, 251, 143).
+- Final answer is be in ‘friendly’ blue RGB (146, 205, 220).
