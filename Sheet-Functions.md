@@ -1,3 +1,7 @@
+The Header Block looks like this:
+![HeaderBlock.jpg](https://github.com/Moosevellous/Trace/blob/master/img/HeaderBlock.JPG)
+It's on the top of every blank sheet.
+
 # Fill in header block
 Fills in Date and Engineer initials using the user name of the computer and internal PC clock.
 
