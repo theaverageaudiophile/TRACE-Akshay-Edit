@@ -1,6 +1,8 @@
-## Functions
+## About
 
-### [Home](https://github.com/Moosevellous/Trace/wiki)
+### [Wiki Home](https://github.com/Moosevellous/Trace/wiki)
+
+## Functions
 
 ### [Curves](https://github.com/Moosevellous/Trace/wiki/Curve-Functions)
 
