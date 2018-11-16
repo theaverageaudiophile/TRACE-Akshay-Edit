@@ -1,4 +1,4 @@
-***
+## Functions
 
 ### [Home](https://github.com/Moosevellous/Trace/wiki)
 
@@ -20,7 +20,8 @@
 
 ### [Standard Calculations](https://github.com/Moosevellous/Trace/wiki/Standard-Calculations)
 
-***
+
+## Program
 
 ### [Design Principles](https://github.com/Moosevellous/Trace/wiki/Design-Principles)
 
@@ -28,4 +29,3 @@
 
 ### [Program Structure](https://github.com/Moosevellous/Trace/wiki/Program-Structure)
 
-***
