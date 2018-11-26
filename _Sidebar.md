@@ -10,9 +10,9 @@
 
 ### [Noise Functions](https://github.com/Moosevellous/Trace/wiki/Noise-Functions)
 
-[Distance attenuation](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#distance-attenuation)
+[Distance Attenuation](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#distance-attenuation)
 
-[Mech elements](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#mech-elements)
+[Mech Elements](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#mech-elements)
 
 [Room Loss](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#room-loss)
 
