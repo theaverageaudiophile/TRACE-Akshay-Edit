@@ -4,9 +4,11 @@
 
 ## Functions
 
-### [Curves](https://github.com/Moosevellous/Trace/wiki/Curve-Functions)
+### [Curve Functions](https://github.com/Moosevellous/Trace/wiki/Curve-Functions)
 
 ### [Estimator Functions](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions)
+
+### [Import Functions](https://github.com/Moosevellous/Trace/wiki/Import)
 
 ### [Noise Functions](https://github.com/Moosevellous/Trace/wiki/Noise-Functions)
 
