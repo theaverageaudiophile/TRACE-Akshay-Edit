@@ -31,6 +31,7 @@ Consider a line source as spreading out as the surface area of a cylinder 2*PI(R
 
 The formula is therefore: `10*log(Q/2*PI*R)`
 
+![QFactorDiagramCyl.gif](https://github.com/Moosevellous/Trace/blob/master/img/QFactorDiagramCyl.gif)
 
 ### Plane Source
 `-10*LOG(H*L)+10*LOG(ATAN((H*L)/(L*R*SQRT((H^2)+(L^2)+(4*R^2)))))-2`
