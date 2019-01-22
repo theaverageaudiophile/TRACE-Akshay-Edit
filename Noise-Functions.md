@@ -33,7 +33,11 @@ The formula is therefore: `10*log(Q/2*PI*R)`
 
 
 ### Plane Source
-TBD
+`-10*LOG(H*L)+10*LOG(ATAN((H*L)/(L*R*SQRT((H^2)+(L^2)+(4*R^2)))))-2`
+
+For a plane source, the attenuation depends on 3 variables. The height of the plane, the width of the plane, and the distance from the plane (H, L, and R respectively).
+
+It should be noted that while the above equation looks intimidating, at large distances, the equation converges to spreading as a point source. The criteria for this is approximately for distances of R = SQRT(H*L). This is because as you move further away from a plane source, eventually, the distance term R becomes vastly more important in the spreading that the size of the plane itself.
 
 ### Area correction
 The correction for area is:
