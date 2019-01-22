@@ -39,6 +39,8 @@ For a plane source, the attenuation depends on 3 variables. The height of the pl
 
 It should be noted that while the above equation looks intimidating, at large distances, the equation converges to spreading as a point source. The criteria for this is approximately for distances of R = SQRT(H*L). This is because as you move further away from a plane source, eventually, the distance term R becomes vastly more important in the spreading that the size of the plane itself.
 
+![DistanceAttenuation](https://github.com/Moosevellous/Trace/blob/master/img/distanceAtten.png)
+
 ### Area correction
 The correction for area is:
 `10*log(A)`
