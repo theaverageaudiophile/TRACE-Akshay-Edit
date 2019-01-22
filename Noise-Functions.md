@@ -15,10 +15,22 @@ Absorption is assumed to be a loss and is therefore input as a negative value.
 
 ## Distance Attenuation
 ### Point Source
-`10*log(Q/4*PI*(R^2))`
+
+When the source is sufficiently small, we assume that the origin  of the sound is a single point in space that spreads out spherically, such that the sound pressure per area is reduced by the area of a sphere, `4*PI(R^2)`. The Q term to be either 1, 2, 4, or 8 to represent a fraction of a sphere, either pure spherical spreading (Q = 1), half spherical spreading (Q=2) and so on, up to a source in the corner of a room, 1/8th spherical spreading (Q = 8).
+
+![QFactorDiagram.gif](https://github.com/Moosevellous/Trace/blob/master/img/QFactorDiagram.gif)
+
+We can then convert this reduction in sound pressure level by taking 10*log of the previous equation.
+
+The formula is therefore: `10*log(Q/4*PI(R^2))`
+
+As one would expect, a doubling of the Q factor  results in a 3dB  reduction in distance attenuation.
 
 ### Line Source
-`10*log(Q/2*PI*R)`
+Consider a line source as spreading out as the surface area of a cylinder 2*PI(R^2). The Q term to be either 1, 2, 4, or 8 to represent a fraction of a cylinder, either pure cylindrical spreading (Q = 1), half cylindrical spreading (Q=2) and so on.
+
+The formula is therefore: `10*log(Q/2*PI*R)`
+
 
 ### Plane Source
 TBD
