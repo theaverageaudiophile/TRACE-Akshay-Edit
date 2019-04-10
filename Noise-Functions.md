@@ -161,6 +161,9 @@ In order to use the ‘find suitable silencer’ function:
 - Click 'Insert' to add the silencer to the spreadsheet.
 
 ### Acoustic Louvres
+
+![LouvresDiagram.jpg](https://github.com/Moosevellous/Trace/blob/master/img/LouvresDiagram.jpg)
+
 ## Room Loss
 ### Classic
 `Function GetRoomLoss(fstr As String, L As Double, W As Double, H As Double, roomType As String)`
