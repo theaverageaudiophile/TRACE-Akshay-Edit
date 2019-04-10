@@ -161,8 +161,12 @@ In order to use the ‘find suitable silencer’ function:
 - Click 'Insert' to add the silencer to the spreadsheet.
 
 ### Acoustic Louvres
+Inserts the transmission loss from louvres in text file:
+- ...*Trace_directory*\Louvres.txt
 
-![LouvresDiagram.jpg](https://github.com/Moosevellous/Trace/blob/master/img/LouvresDiagram.jpg)
+![frmLouvres.JPG](https://github.com/Moosevellous/Trace/blob/master/img/frmLouvres.JPG)
+
+The values are into the sheet, including a comment containing the length and open area of the louvre.
 
 ## Room Loss
 ### Classic
