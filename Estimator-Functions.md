@@ -119,4 +119,27 @@ The Cooling Tower estimator tool looks like this:
 And implements all the corrections defined above. 
 
 # Electric Motor
+
+For small motors (<300kW), the equations are as follows:
+
+|            | Equation (SPL @ 1m)        |
+|------------|----------------------------|
+| Under 40kW | Lp=17+17log(kW)+15log(RPM) |
+| Over 40kW  | Lp=28+10log(kW)+15log(RPM) |
+
+Corrections can be applied to Totally Enclosed Fan Cooled (TEFC) types and Drip Proof Motor (DRPR) types:
+
+|      | 31.5 | 63 | 125 | 250 | 500 | 1k | 2k | 4k | 8k |
+|------|------|----|-----|-----|-----|----|----|----|----|
+| TEFC | 14   | 14 | 11  | 9   | 6   | 6  | 7  | 12 | 20 |
+| DRPR | 9    | 9  | 7   | 7   | 6   | 9  | 12 | 18 | 27 |
+
 # Compressor
+
+For small compressors:
+
+|             | 31.5 | 63 | 125 | 250 | 500 | 1k  | 2k  | 4k | 8k |
+|-------------|------|----|-----|-----|-----|-----|-----|----|----|
+| Up to 1.5kW | 90   | 89 | 89  | 88  | 91  | 94  | 94  | 92 | 89 |
+| 2kW to 6 kW | 95   | 92 | 92  | 91  | 94  | 97  | 97  | 95 | 92 |
+| 7kW to 75kW | 100  | 95 | 95  | 94  | 97  | 100 | 100 | 98 | 95 |
