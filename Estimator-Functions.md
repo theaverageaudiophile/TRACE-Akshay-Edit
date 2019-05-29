@@ -143,3 +143,9 @@ For small compressors:
 | Up to 1.5kW | 90   | 89 | 89  | 88  | 91  | 94  | 94  | 92 | 89 |
 | 2kW to 6 kW | 95   | 92 | 92  | 91  | 94  | 97  | 97  | 95 | 92 |
 | 7kW to 75kW | 100  | 95 | 95  | 94  | 97  | 100 | 100 | 98 | 95 |
+
+# Turbines
+
+## Steam Turbines
+
+## Gas Turbines
