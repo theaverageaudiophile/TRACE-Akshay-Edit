@@ -59,8 +59,10 @@ Sound attenuation and insertion losses of sheet metal ducts are outlined in ASHR
 - Length of duct (in m)
 
 The insertion loss values are provided in the following tables:
-
+<details>
+<summary>
 1. Unlined rectangular sheet metal ducts
+</summary>
 
 | Duct size, mm | 63Hz | 125Hz | 250Hz | >250Hz |
 | - | - | - | - | - |
@@ -70,8 +72,12 @@ The insertion loss values are provided in the following tables:
 | 610 x 610 | 0.82 | 0.66 | 0.33 | 0.10	|
 | 1220 x 1220 | 0.49 | 0.33 | 0.23 | 0.07 |	
 | 1830 x 1830 | 0.33 | 0.33 | 0.16 | 0.07 |	
+</details>
 
+<details>
+<summary>
 2. Rectangular sheet metal ducts with 25mm fibreglass lining
+</summary>
 
 | Duct size, mm	|  	| 125Hz	| 250Hz	| 500Hz	| 1000Hz | 2000Hz | 4000Hz|
 |-------|------	|------	|-------|------	|------	|-------|------	|
@@ -119,9 +125,13 @@ The insertion loss values are provided in the following tables:
 | 1020 	| 2440 	| 0.3 	| 0.7 	| 2.6 	| 5.6 	| 3.3 	| 3.3 	|
 | 1070 	| 3200 	| 0.3 	| 0.7 	| 3.0 	| 5.6 	| 3.3 	| 3.3 	|
 | 1020 	| 3660 	| 0.3 	| 0.7 	| 2.6 	| 5.2 	| 3.0 	| 3.0 	|
+</details>
 
 
+<details>
+<summary>
 3. Rectangular sheet metal ducts with 50mm fibreglass lining
+</summary>
 
 | Duct size, mm 	|  	| 125 	| 250 	| 500 	| 1000 	| 2000 	| 4000 	|
 |-------|------	|------	|-------|------	|------	|-------|------	|
@@ -169,8 +179,12 @@ The insertion loss values are provided in the following tables:
 | 1020 	| 2440 	| 0.3 	| 1.3 	| 4.9 	| 6.9 	| 3.3 	| 3.3 	|
 | 1070 	| 3200 	| 0.3 	| 1.3 	| 5.2 	| 7.2 	| 3.3 	| 3.3 	|
 | 1020 	| 3660 	| 0.1 	| 1.3 	| 4.9 	| 6.6 	| 3.0 	| 3.0 	|
+</details>
 
+<details>
+<summary>
 4. Unlined straight round ducts
+</summary>
 
 | Diameter, mm | 63 | 125 | 250 | 500 | 1000 | 2000 | 4000 |
 | - | - | - | - | - | - | - | - |		
@@ -178,8 +192,12 @@ The insertion loss values are provided in the following tables:
 | 380 | 0.1 | 0.1 | 0.1 | 0.16 | 0.23 | 0.23 | 0.23 |	
 | 760 | 0.07 | 0.07 | 0.07 | 0.1 | 0.16 | 0.16 | 0.16|		
 | 1520 | 0.03 | 0.03 | 0.03 | 0.07 | 0.07 | 0.07 | 0.07 |	
+</details>
 
+<details>
+<summary>
 5. Acoustically lined round ducts with 25mm lining
+</summary>
 
 | Diameter, mm 	| 63 	| 125 	| 250 	| 500 	| 1000 	| 2000 	| 4000 	| 8000 	|
 | - | - | - | - | - | - | - | - | - |
@@ -211,8 +229,12 @@ The insertion loss values are provided in the following tables:
 | 1420 	| 0 	| 0 	| 0.33 	| 0.9 	| 0.26 	| 0.59 	| 0.82 	| 0.72 	|
 | 1475 	| 0 	| 0 	| 0.3 	| 0.56 	| 0.26 	| 0.42 	| 0.59 	| 0.49 	|
 | 1525 	| 0 	| 0 	| 0.26 	| 0.52 	| 0.33 	| 0.46 	| 0.30 	| 0.23 	|
+</details>
 
+<details>
+<summary>
 6. Acoustically lined round ducts with 50mm lining
+</summary>
 
 | Diameter, mm 	| 63 	| 125 	| 250 	| 500 	| 1000 	| 2000 	| 4000 	| 8000 |
 | - | - | - | - | - | - | - | - | - |
@@ -244,7 +266,7 @@ The insertion loss values are provided in the following tables:
 | 1420 	| 0.07 	| 0.16 	| 1.8 	| 3.28 	| 0.26 	| 0.59 	| 0.82 	| 0.72 	|
 | 1475 	| 0 	| 0.1 	| 1.74 	| 2.95 	| 0.26 	| 0.52 	| 0.59 	| 0.49 	|
 | 1525 	| 0 	| 0 	| 1.74 	| 2.59 	| 0.33 	| 0.46 	| 0.30 	| 0.23 	|
-
+</details>
 ### Flex Duct
 ### End Reflection Loss (ERL)
 
