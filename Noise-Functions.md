@@ -267,6 +267,7 @@ The insertion loss values are provided in the following tables:
 | 1475 	| 0 	| 0.1 	| 1.74 	| 2.95 	| 0.26 	| 0.52 	| 0.59 	| 0.49 	|
 | 1525 	| 0 	| 0 	| 1.74 	| 2.59 	| 0.33 	| 0.46 	| 0.30 	| 0.23 	|
 </details>
+
 ### Flex Duct
 ### End Reflection Loss (ERL)
 
