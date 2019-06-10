@@ -16,12 +16,11 @@ Makes borders of cells look consistent. The default format looks like this:
 
 # Plot
 
-Generates a plot of the rows selected and applied the following formatting:
-- Titles the chart (using prompt)
-- Titles the x and y axes
-- Formats the y-axis to be in whole numbers
-- Separates overall A-weighted value so it appears as a single point
-- Scales the graph to have good proportions
+Generates a plot of the rows selected and applies formatting based on the user input form.
+
+![frmPlotTool.JPG](https://github.com/Moosevellous/Trace/blob/master/img/frmPlotTool.JPG)
+
+Formatting is applied to all series in the chart for consistency. Edits to an individual series can still be made the regular way through Excel's interface. The plot tool can also be applied to existing chart objects, by having the chart selected first, then clicking the Plot button in the Trace Ribbon.
 
 # Heat Map
 Uses conditional formatting to generate a heat map of values. 
