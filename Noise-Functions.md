@@ -273,11 +273,13 @@ The insertion loss values are provided in the following tables:
 
 `Function GetERL(TerminationType As String, freq As String, DuctArea As Double)`
 
-End Reflection Loss (ERL) happens as sound waves in the low end of the frequency spectrum exit a duct into a large room, some of that sound energy gets reflected back into the duct.
+End Reflection Loss (ERL) happens as sound waves in the low end of the frequency spectrum exit a duct into a room, some of that sound energy gets reflected back into the duct.
+
+![frmERL.JPG](https://github.com/Moosevellous/Trace/blob/master/img/frmERL.JPG)
 
 The formula for End Reflection Loss is given in the ASHRAE handbook, Chapter 48 _”Noise and Vibration Control”_:
 
-`GetERL = -10*log10(1 + ((A1 + c0) / (f * dia * Pi)) ^ A2)`
+`GetERL = -10*log10(1 + ((A1 * c0) / (f * dia * Pi)) ^ A2)`
 
 There are two types of duct terminations defined in the handbook:
 
