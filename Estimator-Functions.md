@@ -134,6 +134,8 @@ Corrections can be applied to Totally Enclosed Fan Cooled (TEFC) types and Drip 
 | TEFC | 14   | 14 | 11  | 9   | 6   | 6  | 7  | 12 | 20 |
 | DRPR | 9    | 9  | 7   | 7   | 6   | 9  | 12 | 18 | 27 |
 
+![frmEstMotor.JPG](https://github.com/Moosevellous/Trace/blob/master/img/frmEstMotor.JPG)
+
 # Compressor
 
 For small compressors:
@@ -144,8 +146,13 @@ For small compressors:
 | 2kW to 6 kW | 95   | 92 | 92  | 91  | 94  | 97  | 97  | 95 | 92 |
 | 7kW to 75kW | 100  | 95 | 95  | 94  | 97  | 100 | 100 | 98 | 95 |
 
+![frmEstCompressorSmall.JPG](https://github.com/Moosevellous/Trace/blob/master/img/frmEstCompressorSmall.JPG)
+
 # Turbines
 
-## Steam Turbines
-
 ## Gas Turbines
+
+![frmEstGasTurbine.JPG](https://github.com/Moosevellous/Trace/blob/master/img/frmEstGasTurbine.JPG)
+
+## Steam Turbines
+![frmEstSteamTurbine.JPG](https://github.com/Moosevellous/Trace/blob/master/img/frmEstSteamTurbine.JPG)
