@@ -301,7 +301,13 @@ Note that the variable `freq` is converted to a value using the Trace function `
 
 ### Regenerated noise
 ### Elbow / Bend
+
+`Function GetElbowLoss(fstr As String, W As Double, elbowShape As String, DuctLining As String, VaneType As String)`
+
 ### Duct Split
+
+![frmDuctSplit.JPG](https://github.com/Moosevellous/Trace/blob/master/img/frmDuctSplit.JPG)
+
 ### Silencer
 
 Silencers are special ducts with perforated sound absorptive linings, containing elements to channel the air. These elements are known as 'splitters' or 'pods'. Silencers are designed to reduce noise travelling down ducts, but may also be used to reduce sound transmitted between spaces, also known as *crosstalk*.
@@ -315,10 +321,12 @@ The splitters or pods reduce the cross-sectional area (open area) of the duct, t
 
 The `Silencer` function in **Trace** can either provide the insertion loss for a silencer given a known model code, or can test all silencer models to find those which meet a given noise target. All silencer data is taken from the Fantech silencer database. This data is stored in
 
-- ...*Trace_directory*\Silencers.txt
+- ...*Trace_directory*\DATA\Silencers.txt
 
 This file contains a list of octave band insertion losses for a number of silencers, as well as the model number, length, and free area (percentage).
 Refer to [https://www.fantech.com.au/attenuator.aspx](https://www.fantech.com.au/attenuator.aspx) for the default data set. Additional rows of data may be added to the text file from any source, provided it follows the same layout.
+
+![frmSilencer.JPG](https://github.com/Moosevellous/Trace/blob/master/img/frmSilencer.JPG)
 
 #### Search by model number
 
