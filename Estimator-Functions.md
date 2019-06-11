@@ -1,9 +1,6 @@
-|Topics|   |
-|:--- | --- |
-| [Fans ](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions#fan-simple) | [Pumps](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions#pump-simple) |
-| [Cooling Tower](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions#cooling-tower) | [Electric Motor](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions#electric-motor) |
-| [Compressor](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions#compressor) | [Gas Turbines](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions#gas-turbines) |
-| [Steam Turbines](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions#steam-turbines) |   |
+|Go to...| 
+|:--- |
+| [Fans ](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions#fan-simple) <br> [Pumps](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions#pump-simple) <br> [Cooling Tower](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions#cooling-tower)<br>[Electric Motor](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions#electric-motor) <br> [Compressor](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions#compressor) <br> [Gas Turbines](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions#gas-turbines) <br> [Steam Turbines](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions#steam-turbines)  |
 
 
 # Fan Simple
