@@ -1,7 +1,14 @@
-# Noise Functions Module
-This module is at the heart of Trace, and does the most heavy lifting, computationally. It is expected that this section of Trace will have the most development as more functions are requested from acoustic engineers and implemented as needs arise.
+|Go to... |
+|:--- |
+|[Air Absorption](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#air-absorption) <br> |
+|Distance Attenuation <br> [Point Source](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#point-source) <br> [Line Source](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#line-source) <br> [Plane Source](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#plane-source)|
+|[Area correction](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#area-correction)|
+|Mechanical Elements <br>[ASHRAE Duct](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#ashrae-duct) <br> [Flex Duct](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#flex-duct) <br> [End Reflection Loss](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#end-reflection-loss-erl) <br> [Regenerated Noise](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#regenerated-noise) <br>[Elbow/Bend](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#elbow--bend) <br>[Duct Split](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#duct-split) <br>[Silencer](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#silencer) <br>[Louvres](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#acoustic-louvres)|
+| Room Loss <br> [Classic](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#classic) <br> [RT Method](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#rt-method) <br> [Room Constant](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#room-constant) |
+|[Direct Reverberant Sum](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#direct--reverberant-sum)|
 
-## Air Absorption
+
+# Air Absorption
 
 `Private Function AirAbsorb(freq As String, Distance As Integer, temp As Integer)`
 
@@ -13,8 +20,8 @@ Air absorption varies over frequency with the following values (from 63Hz octave
 
 Absorption is assumed to be a loss and is therefore input as a negative value.
 
-## Distance Attenuation
-### Point Source
+# Distance Attenuation
+## Point Source
 
 When the source is sufficiently small, we assume that the origin  of the sound is a single point in space that spreads out spherically, such that the sound pressure per area is reduced by the area of a sphere, `4*PI(R^2)`. The Q term to be either 1, 2, 4, or 8 to represent a fraction of a sphere, either pure spherical spreading (Q = 1), half spherical spreading (Q=2) and so on, up to a source in the corner of a room, 1/8th spherical spreading (Q = 8).
 
@@ -26,14 +33,14 @@ The formula is therefore: `10*log(Q/4*PI(R^2))`
 
 As one would expect, a doubling of the Q factor  results in a 3dB  reduction in distance attenuation.
 
-### Line Source
+## Line Source
 Consider a line source as spreading out as the surface area of a cylinder 2*PI(R^2). The Q term to be either 1, 2, 4, or 8 to represent a fraction of a cylinder, either pure cylindrical spreading (Q = 1), half cylindrical spreading (Q=2) and so on.
 
 The formula is therefore: `10*log(Q/2*PI*R)`
 
 ![QFactorDiagramCyl.gif](https://github.com/Moosevellous/Trace/blob/master/img/QFactorDiagramCyl.gif)
 
-### Plane Source
+## Plane Source
 `-10*LOG(H*L)+10*LOG(ATAN((H*L)/(L*R*SQRT((H^2)+(L^2)+(4*R^2)))))-2`
 
 For a plane source, the attenuation depends on 3 variables. The height of the plane, the width of the plane, and the distance from the plane (H, L, and R respectively).
@@ -42,14 +49,14 @@ It should be noted that while the above equation looks intimidating, at large di
 
 ![DistanceAttenuation](https://github.com/Moosevellous/Trace/blob/master/img/distanceAtten.png)
 
-### Area correction
+## Area correction
 The correction for area is:
 `10*log(A)`
 
 The button `Area Correction` applies the formula to all octave bands or one-third octave bands.
 
-## Mech Elements
-### ASHRAE Duct
+# Mech Elements
+## ASHRAE Duct
 
 `Function GetASHRAE(freq As String, W As Double, H As Double, XXX As String, L As String)`
 
@@ -268,8 +275,8 @@ The insertion loss values are provided in the following tables:
 | 1525 	| 0 	| 0 	| 1.74 	| 2.59 	| 0.33 	| 0.46 	| 0.30 	| 0.23 	|
 </details>
 
-### Flex Duct
-### End Reflection Loss (ERL)
+## Flex Duct
+## End Reflection Loss (ERL)
 
 `Function GetERL(TerminationType As String, freq As String, DuctArea As Double)`
 
@@ -296,19 +303,16 @@ The duct termination changes the coefficients A1 and A2, as follows:
 Note that the variable `freq` is converted to a value using the Trace function `freqStr2Num(freq)`
 
 
-
-
-
-### Regenerated noise
-### Elbow / Bend
+## Regenerated noise
+## Elbow / Bend
 
 `Function GetElbowLoss(fstr As String, W As Double, elbowShape As String, DuctLining As String, VaneType As String)`
 
-### Duct Split
+## Duct Split
 
 ![frmDuctSplit.JPG](https://github.com/Moosevellous/Trace/blob/master/img/frmDuctSplit.JPG)
 
-### Silencer
+## Silencer
 
 Silencers are special ducts with perforated sound absorptive linings, containing elements to channel the air. These elements are known as 'splitters' or 'pods'. Silencers are designed to reduce noise travelling down ducts, but may also be used to reduce sound transmitted between spaces, also known as *crosstalk*.
 
@@ -328,7 +332,7 @@ Refer to [https://www.fantech.com.au/attenuator.aspx](https://www.fantech.com.au
 
 ![frmSilencer.JPG](https://github.com/Moosevellous/Trace/blob/master/img/frmSilencer.JPG)
 
-#### Search by model number
+### Search by model number
 
 In order to search for a known silencer model:
 - Type the part of the model number which is  known (RS, RT, 15C etc...)
@@ -336,7 +340,7 @@ In order to search for a known silencer model:
 - Select a model within the search results. The insertion loss, free area %, and the length are shown.
 - Click 'Insert' to add the silencer to the spreadsheet.
 
-#### Solver
+### Solver
 
 The solver function takes the following inputs:
 
@@ -351,7 +355,7 @@ In order to use the ‘find suitable silencer’ function:
 - Select a model within the search results. The insertion loss, free area %, and the length are shown.
 - Click 'Insert' to add the silencer to the spreadsheet.
 
-### Acoustic Louvres
+## Acoustic Louvres
 Inserts the transmission loss from louvres in text file:
 - ...*Trace_directory*\Louvres.txt
 
@@ -359,8 +363,8 @@ Inserts the transmission loss from louvres in text file:
 
 The values are into the sheet, including a comment containing the length and open area of the louvre.
 
-## Room Loss
-### Classic
+# Room Loss
+## Classic
 `Function GetRoomLoss(fstr As String, L As Double, W As Double, H As Double, roomType As String)`
 
 **Values for alpha**
@@ -379,7 +383,7 @@ The values are into the sheet, including a comment containing the length and ope
 
 `GetRoomLoss = 10 * Application.WorksheetFunction.Log10(4 / Rc)`
 
-### RT method
+## RT method
 
 `Function GetRoomLossRT(fstr As String, L As Double, W As Double, H As Double, RT_Type As String)`
 
@@ -400,5 +404,15 @@ The values are into the sheet, including a comment containing the length and ope
 
 `GetRoomLoss = 10 * Application.WorksheetFunction.Log10(4 / Rc)`
 
-### Room constant
+## Room constant
+
+
+`GetRoomLoss = 10 * Application.WorksheetFunction.Log10(4 / {Row Reference})`
+
 ## Direct / Reverberant Sum
+
+* Scans rows above until it finds a blank line
+* Sums all rows to that point and applies a distance attenuation (point source, 1m) for the Direct Field
+* Sums the same rows and applies a Room Loss (Classic method) for the Reverberant Field
+* Logarithmically sums the paths to that point (SPLSUM)
+* Applies Styles
