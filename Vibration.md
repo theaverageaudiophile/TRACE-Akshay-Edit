@@ -1,39 +1,38 @@
 # Convert Units
 
-<TBD>
+TBD
 
 ## dB to Linear
 
-<TBD>
+TBD
 
 
 ## Linear to dB
 
-<TBD>
+TBD
 
 
 ## Accel/Vel/Disp Convert
 
-<TBD>
+TBD
 
 
 # ASHRAE Curves
 
-<TBD>
+TBD
 
 
 # Building Vibration
 
-<TBD>
+TBD
 
 
 ## Coupling Loss
 
-<TBD>
-
+TBD
 
 ## Building Vibration
 
 
-<TBD>
+TBD
 
