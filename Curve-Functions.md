@@ -1,3 +1,7 @@
+|Go to...| 
+|:--- |
+| [NR](https://github.com/Moosevellous/Trace/wiki/Curve-Functions#nr) <br>[NC](https://github.com/Moosevellous/Trace/wiki/Curve-Functions#nc) <br> [Rw](https://github.com/Moosevellous/Trace/wiki/Curve-Functions#rw-) <br> [Ctr](https://github.com/Moosevellous/Trace/wiki/Curve-Functions#ctrrate) <br> [Lnw](https://github.com/Moosevellous/Trace/wiki/Curve-Functions#lnw)  |
+
 # NR
 
 The button NR curve inserts two functions. The function `NRRate` finds the corresponding NR curve for the row above. The function `NRCurve` returns the values of the curve at each octave band.
