@@ -12,3 +12,18 @@ The following applies to the development of Trace. These should provide guidance
 - User input elements are to be clearly denoted by the Trace Input Style.
 
 # Styles
+
+Trace has now implemented Styles to aid in presenting and reviewing calculation sheets. The set of Trace Styles are currently:
+- Title
+- Unmitigated 
+- Mitigated
+- Source
+- Reference
+- Silencer
+- User Input
+- Comment
+- Subtotal
+- Total
+- Normal
+
+The styles are named "**Trace `StyleName`**" (substitute as appropriate).
