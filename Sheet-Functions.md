@@ -1,6 +1,6 @@
 | Go to... |
 |:---- |
-|[Fill in Header Block](https://github.com/Moosevellous/Trace/wiki/Sheet-Functions#fill-in-header-block) <br> [Clear Header Block](https://github.com/Moosevellous/Trace/wiki/Sheet-Functions#clear-header-block) <br> [Format Borders}(https://github.com/Moosevellous/Trace/wiki/Sheet-Functions#format-borders) <br> [Plot](https://github.com/Moosevellous/Trace/wiki/Sheet-Functions#plot) <br> [Heat Map](https://github.com/Moosevellous/Trace/wiki/Sheet-Functions#heat-map) <br>[Fix References](https://github.com/Moosevellous/Trace/wiki/Sheet-Functions#fix-references)|
+|[Fill in Header Block](https://github.com/Moosevellous/Trace/wiki/Sheet-Functions#fill-in-header-block) <br> [Clear Header Block](https://github.com/Moosevellous/Trace/wiki/Sheet-Functions#clear-header-block) <br> [Format Borders](https://github.com/Moosevellous/Trace/wiki/Sheet-Functions#format-borders) <br> [Plot](https://github.com/Moosevellous/Trace/wiki/Sheet-Functions#plot) <br> [Heat Map](https://github.com/Moosevellous/Trace/wiki/Sheet-Functions#heat-map) <br>[Fix References](https://github.com/Moosevellous/Trace/wiki/Sheet-Functions#fix-references)|
 
 The Header Block looks like this:
 ![HeaderBlock.jpg](https://github.com/Moosevellous/Trace/blob/master/img/HeaderBlock.JPG)
