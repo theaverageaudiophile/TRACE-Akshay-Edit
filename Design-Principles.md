@@ -1,3 +1,7 @@
+# Overview
+
+The following applies to the development of Trace. These should provide guidance to the ethos behind the platform. 
+
 - Where possible, the full equation is to be written out, except where:
   - Empirical relationships exist / lookup tables are required; or
   - the full equation is difficult to read as an inline function.
@@ -5,4 +9,6 @@
 - All losses are to be shown as negative numbers.
 - Blank Calculation Sheets and Standard Calculation Sheets are to be printable with a layout suitable for fitting to standard paper sizes.
 - All sheets are to have a standard header block layout.
-- User input elements are to be ‘post-it’ yellow RGB (251, 251, 143).
+- User input elements are to be clearly denoted by the Trace Input Style.
+
+# Styles
