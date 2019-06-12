@@ -2,12 +2,14 @@ Trace is built to be expanded by anyone. If you want to do this, it's probably a
 
 All buttons are in groups on the Ribbon. The name of group should match with the name of the module in which it sits. At the moment the groups are:
 - Load
-- Import From
-- Row Functions
-- Noise Functions
-- Estimator Functions
-- Curve Functions
-- Sheet Functions
+- Import 
+- Row Operations
+- Noise 
+- Curves
+- SWL Estimation
+- Vibration
+- Sheet Tools
+- Format / Style
 - Help
 
 Additionally, there is a module called `Ribbon Functions` which holds all of the callbacks for the buttons on the ribbon.
