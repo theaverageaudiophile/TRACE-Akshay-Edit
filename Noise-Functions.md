@@ -7,6 +7,7 @@
 | Room Loss <br> [Classic](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#classic) <br> [RT Method](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#rt-method) <br> [Room Constant](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#room-constant) |
 |[Direct Reverberant Sum](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#direct--reverberant-sum)|
 
+<a href="#">[Back to top]</a>
 
 # Air Absorption
 
@@ -19,6 +20,8 @@ Air absorption varies over frequency with the following values (from 63Hz octave
 | Insertion loss per km, dB |0.1 | 0.3 | 1.1 | 2.8 | 5 | 9 | 22.9 | 76.6 |  
 
 Absorption is assumed to be a loss and is therefore input as a negative value.
+
+<a href="#">[Back to top]</a>
 
 # Distance Attenuation
 ## Point Source
@@ -33,12 +36,16 @@ The formula is therefore: `10*log(Q/4*PI(R^2))`
 
 As one would expect, a doubling of the Q factor  results in a 3dB  reduction in distance attenuation.
 
+<a href="#">[Back to top]</a>
+
 ## Line Source
 Consider a line source as spreading out as the surface area of a cylinder 2*PI(R^2). The Q term to be either 1, 2, 4, or 8 to represent a fraction of a cylinder, either pure cylindrical spreading (Q = 1), half cylindrical spreading (Q=2) and so on.
 
 The formula is therefore: `10*log(Q/2*PI*R)`
 
 ![QFactorDiagramCyl.gif](https://github.com/Moosevellous/Trace/blob/master/img/QFactorDiagramCyl.gif)
+
+<a href="#">[Back to top]</a>
 
 ## Plane Source
 `-10*LOG(H*L)+10*LOG(ATAN((H*L)/(L*R*SQRT((H^2)+(L^2)+(4*R^2)))))-2`
@@ -49,11 +56,15 @@ It should be noted that while the above equation looks intimidating, at large di
 
 ![DistanceAttenuation](https://github.com/Moosevellous/Trace/blob/master/img/distanceAtten.png)
 
+<a href="#">[Back to top]</a>
+
 ## Area correction
 The correction for area is:
 `10*log(A)`
 
 The button `Area Correction` applies the formula to all octave bands or one-third octave bands.
+
+<a href="#">[Back to top]</a>
 
 # Mech Elements
 ## ASHRAE Duct
@@ -275,7 +286,64 @@ The insertion loss values are provided in the following tables:
 | 1525 	| 0 	| 0 	| 1.74 	| 2.59 	| 0.33 	| 0.46 	| 0.30 	| 0.23 	|
 </details>
 
+<a href="#">[Back to top]</a>
+
 ## Flex Duct
+
+Looks up the values from the ASHRAE tables for flexible ducts, see below. No interpolation is made, prefixed lengths can be selected from a dropdown list. 
+
+<details>
+<summary>
+Flexible Duct Insertion Loss
+</summary>
+
+| *Diameter | Length | 63 | 125 | 250 | 500 | 1000 | 2000 | 4000 |
+|-----------|--------|----|-----|-----|-----|------|------|------|
+| 100       | 0.9    | 2  | 3   | 3   | 8   | 9    | 11   | 7    |
+| 100       | 1.8    | 3  | 6   | 6   | 16  | 19   | 21   | 14   |
+| 100       | 2.7    | 5  | 8   | 9   | 23  | 28   | 32   | 20   |
+| 100       | 3.7    | 6  | 11  | 12  | 31  | 37   | 42   | 27   |
+| 125       | 0.9    | 2  | 3   | 4   | 8   | 10   | 10   | 7    |
+| 125       | 1.8    | 4  | 6   | 7   | 16  | 19   | 21   | 13   |
+| 125       | 2.7    | 5  | 9   | 11  | 24  | 29   | 31   | 20   |
+| 125       | 3.7    | 7  | 12  | 14  | 32  | 38   | 41   | 26   |
+| 150       | 0.9    | 2  | 3   | 4   | 8   | 10   | 10   | 7    |
+| 150       | 1.8    | 4  | 6   | 9   | 17  | 19   | 20   | 13   |
+| 150       | 2.7    | 6  | 9   | 13  | 25  | 29   | 30   | 20   |
+| 150       | 3.7    | 8  | 12  | 17  | 33  | 38   | 40   | 26   |
+| 175       | 0.9    | 2  | 3   | 5   | 8   | 9    | 10   | 6    |
+| 175       | 1.8    | 4  | 6   | 10  | 17  | 19   | 19   | 13   |
+| 175       | 2.7    | 6  | 9   | 14  | 5   | 28   | 29   | 19   |
+| 175       | 3.7    | 9  | 12  | 19  | 33  | 37   | 38   | 25   |
+| 200       | 0.9    | 2  | 3   | 5   | 8   | 9    | 9    | 6    |
+| 200       | 1.8    | 4  | 6   | 11  | 17  | 19   | 19   | 12   |
+| 200       | 2.7    | 6  | 8   | 16  | 25  | 28   | 28   | 18   |
+| 200       | 3.7    | 8  | 11  | 21  | 33  | 37   | 37   | 24   |
+| 225       | 0.9    | 2  | 3   | 6   | 8   | 9    | 9    | 6    |
+| 225       | 1.8    | 4  | 6   | 11  | 17  | 19   | 19   | 12   |
+| 225       | 2.7    | 6  | 8   | 17  | 25  | 28   | 27   | 17   |
+| 225       | 3.7    | 8  | 11  | 22  | 33  | 37   | 36   | 22   |
+| 250       | 0.9    | 2  | 3   | 6   | 8   | 9    | 9    | 5    |
+| 250       | 1.8    | 4  | 5   | 11  | 16  | 18   | 17   | 11   |
+| 250       | 2.7    | 6  | 8   | 17  | 24  | 27   | 26   | 16   |
+| 250       | 3.7    | 8  | 10  | 22  | 32  | 36   | 34   | 21   |
+| 300       | 0.9    | 2  | 2   | 5   | 8   | 9    | 8    | 5    |
+| 300       | 1.8    | 3  | 5   | 10  | 15  | 17   | 16   | 9    |
+| 300       | 2.7    | 5  | 7   | 15  | 23  | 26   | 23   | 14   |
+| 300       | 3.7    | 7  | 9   | 20  | 30  | 34   | 31   | 18   |
+| 350       | 0.9    | 1  | 2   | 4   | 7   | 8    | 7    | 4    |
+| 350       | 1.8    | 3  | 4   | 8   | 14  | 16   | 14   | 7    |
+| 350       | 2.7    | 4  | 5   | 12  | 20  | 23   | 20   | 11   |
+| 350       | 3.7    | 5  | 7   | 16  | 27  | 31   | 27   | 14   |
+| 400       | 0.9    | 1  | 1   | 2   | 6   | 7    | 6    | 2    |
+| 400       | 1.8    | 1  | 2   | 5   | 12  | 14   | 12   | 5    |
+| 400       | 2.7    | 2  | 3   | 7   | 17  | 21   | 17   | 7    |
+| 400       | 3.7    | 2  | 4   | 9   | 23  | 28   | 23   | 9    |
+
+</details>
+
+<a href="#">[Back to top]</a>
+
 ## End Reflection Loss (ERL)
 
 `Function GetERL(TerminationType As String, freq As String, DuctArea As Double)`
@@ -302,15 +370,25 @@ The duct termination changes the coefficients A1 and A2, as follows:
 
 Note that the variable `freq` is converted to a value using the Trace function `freqStr2Num(freq)`
 
+<a href="#">[Back to top]</a>
 
 ## Regenerated noise
+
+TBC
+
+<a href="#">[Back to top]</a>
+
 ## Elbow / Bend
 
 `Function GetElbowLoss(fstr As String, W As Double, elbowShape As String, DuctLining As String, VaneType As String)`
 
+<a href="#">[Back to top]</a>
+
 ## Duct Split
 
 ![frmDuctSplit.JPG](https://github.com/Moosevellous/Trace/blob/master/img/frmDuctSplit.JPG)
+
+<a href="#">[Back to top]</a>
 
 ## Silencer
 
@@ -363,6 +441,8 @@ Inserts the transmission loss from louvres in text file:
 
 The values are into the sheet, including a comment containing the length and open area of the louvre.
 
+<a href="#">[Back to top]</a>
+
 # Room Loss
 ## Classic
 `Function GetRoomLoss(fstr As String, L As Double, W As Double, H As Double, roomType As String)`
@@ -382,6 +462,8 @@ The values are into the sheet, including a comment containing the length and ope
 `Rc = (S_total * alpha(bandIndex)) / (1 - alpha_av)`
 
 `GetRoomLoss = 10 * Application.WorksheetFunction.Log10(4 / Rc)`
+
+<a href="#">[Back to top]</a>
 
 ## RT method
 
@@ -404,10 +486,14 @@ The values are into the sheet, including a comment containing the length and ope
 
 `GetRoomLoss = 10 * Application.WorksheetFunction.Log10(4 / Rc)`
 
+<a href="#">[Back to top]</a>
+
 ## Room constant
 
 
 `GetRoomLoss = 10 * Application.WorksheetFunction.Log10(4 / {Row Reference})`
+
+<a href="#">[Back to top]</a>
 
 ## Direct / Reverberant Sum
 
@@ -416,3 +502,7 @@ The values are into the sheet, including a comment containing the length and ope
 * Sums the same rows and applies a Room Loss (Classic method) for the Reverberant Field
 * Logarithmically sums the paths to that point (SPLSUM)
 * Applies Styles
+
+
+<a href="#">[Back to top]</a>
+
