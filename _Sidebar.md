@@ -6,13 +6,13 @@
 
 ### [Basics](https://github.com/Moosevellous/Trace/wiki/Basics)
 
-### [Curve Functions](https://github.com/Moosevellous/Trace/wiki/Curve-Functions)
+### [Curves](https://github.com/Moosevellous/Trace/wiki/Curve-Functions)
 
-### [Estimator Functions](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions)
+### [Format/Style](https://github.com/Moosevellous/Trace/wiki/Format---Style)
 
-### [Import Functions](https://github.com/Moosevellous/Trace/wiki/Import)
+### [Import](https://github.com/Moosevellous/Trace/wiki/Import)
 
-### [Noise Functions](https://github.com/Moosevellous/Trace/wiki/Noise-Functions)
+### [Noise](https://github.com/Moosevellous/Trace/wiki/Noise-Functions)
 
 [Distance Attenuation](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#distance-attenuation)
 
@@ -20,12 +20,15 @@
 
 [Room Loss](https://github.com/Moosevellous/Trace/wiki/Noise-Functions#room-loss)
 
-### [Row Functions](https://github.com/Moosevellous/Trace/wiki/Row-Functions)
+### [Row Operations](https://github.com/Moosevellous/Trace/wiki/Row-Functions)
 
-### [Sheet Functions](https://github.com/Moosevellous/Trace/wiki/Sheet-Functions)
+### [Sheet Tools](https://github.com/Moosevellous/Trace/wiki/Sheet-Functions)
 
 ### [Standard Calculations](https://github.com/Moosevellous/Trace/wiki/Standard-Calculations)
 
+### [SWL Estimation](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions)
+
+### [Vibration](https://github.com/Moosevellous/Trace/wiki/Vibration)
 
 ## Program
 
