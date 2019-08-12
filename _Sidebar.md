@@ -4,6 +4,8 @@
 
 ## Functions
 
+### [Basics](https://github.com/Moosevellous/Trace/wiki/Basics)
+
 ### [Curve Functions](https://github.com/Moosevellous/Trace/wiki/Curve-Functions)
 
 ### [Estimator Functions](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions)
