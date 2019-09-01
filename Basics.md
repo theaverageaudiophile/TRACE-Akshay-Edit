@@ -1,6 +1,6 @@
 The form looks like this:
 
-![Basics Form](https://github.com/Moosevellous/Trace/blob/master/img/frmBasics.jpg)
+![Basics Form](https://github.com/Moosevellous/Trace/blob/master/img/frmBasics.JPG)
 
 # Logarithmics
 
