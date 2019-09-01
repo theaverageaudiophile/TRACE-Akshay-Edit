@@ -1,6 +1,8 @@
-The form looks like this:
+All buttons in the Basics group call the same form, which looks like this:
 
 ![Basics Form](https://github.com/Moosevellous/Trace/blob/master/img/frmBasics.JPG)
+
+The form applies the formulas to the correct ranges of cells, depending on sheet type and applies styles if checkbox is selected.
 
 # Logarithmics
 
