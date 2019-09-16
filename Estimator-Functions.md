@@ -164,11 +164,74 @@ For small compressors:
 
 ## Gas Turbines
 
+Gas turbines have 3 primary sources of noise, the casing, inlet, and exhaust noise. Changes in SWL from these sources vary with the power of the turbine in MW. From Biess and Hansen , overall SWLs can be estimated by the following equations:
+
+- Casing: Lw = 120 + 5log(MW)
+- Inlet: Lw = 127 + 15log(MW)
+- Outlet: Lw = 133 + 10log(MW)
+
+From the single number SWL we can then determine octave bands by subtracting the following values from the equations above. 
+
+| Octave Band Centre Frequency (Hz)	|31.5	|63	|125	|250	|500	|1000	|2000	|4000	|
+|---	|---	|---	|---	|---	|---	|---	|---	|---	|
+|Casing	|10	|7	|5	|4	|4	|4	|4	|4	|
+|Inlet	|19	|18	|17	|17	|14	|8	|3	|3	|
+|Outlet	|12	|8	|6	|6	|7	|9	|11	|15	|
+
+
+The dialogue box which accepts the inputs of turbine power, enclosure type, and which sound source (casing, inlet or exhaust) is shown below.
+
 ![frmEstGasTurbine.JPG](https://github.com/Moosevellous/Trace/blob/master/img/frmEstGasTurbine.JPG)
+
+The tool allows a user to make adjustments to the desired turbine inputs and displays a live sound power spectrum which will be inserted once ok is clicked.
 
 <a href="#">[Back to top]</a>
 
 ## Steam Turbines
+
+Steam turbine noise emissions may be estimated in direct relation to their power, however, these turbines are typically much smaller than gas turbines and their power measured in kW rather than MW. From Biess and Hansen , an estimation of the SWL radiated is:
+
+- Lw = 93 + 4log(kW)
+
+From the single number SWL we can then determine octave bands by subtracting the following values from the above.
+
+|	|31.5	|63	|125	|250	|500	|1000	|2000	|4000	|
+|---	|---	|---	|---	|---	|---	|---	|---	|---	|
+|Casing	|11	|7	|6	|9	|10	|10	|12	|13	|
+
+
 ![frmEstSteamTurbine.JPG](https://github.com/Moosevellous/Trace/blob/master/img/frmEstSteamTurbine.JPG)
+
+The tool allows a user to make adjustments to the desired turbine inputs and displays a live sound power spectrum which will be inserted once ok is clicked.
+
+
+<a href="#">[Back to top]</a>
+
+## Enclosures
+
+It is often the case that these turbines will be externally wrapped with insulation, in such cases, additional noise reductions should be taken in accordance with the table below.
+
+|Octave band centre frequency (Hz)	|Type 1a	|Type 2b	|Type 3c	|Type 4d	|Type 5e	|
+|---	|---	|---	|---	|---	|---	|
+|31.5	|2	|4	|1	|3	|6	|
+|63	|2	|5	|1	|4	|7	|
+|125	|2	|5	|1	|4	|8	|
+|250	|3	|6	|2	|5	|9	|
+|500	|3	|6	|2	|6	|10	|
+|1000	|3	|7	|2	|7	|11	|
+|2000	|4	|8	|2	|8	|12	|
+|4000	|5	|9	|3	|8	|13	|
+|8000	|6	|10	|3	|8	|14	|
+
+Type a) Glass fibre or mineral wool thermal insulation with lightweight foil over the insulation
+
+Type b) Glass fibre or mineral wool thermal insulation with 20 or 24 gauge aluminium
+
+Type c) Enclosing metal cabinet for the entire packaged assembly, with open ventilation holes and with no acoustic absorptive lining inside the cabinet
+
+Type d) Enclosing metal cabinet for the entire packaged assembly, with open ventilation holes and with internal acoustic absorptive lining inside the cabinet
+
+Type e) Enclosing metal cabinet for the entire packaged assembly with all ventilation holes into the cabinet muffled and with acoustic absorptive lining inside the cabinet
+
 
 <a href="#">[Back to top]</a>
