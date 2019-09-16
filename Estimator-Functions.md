@@ -172,14 +172,15 @@ Gas turbines have 3 primary sources of noise, the casing, inlet, and exhaust noi
 
 From the single number SWL we can then determine octave bands by subtracting the following values from the equations above. 
 
-| Octave Band Centre Frequency (Hz)	|31.5	|63	|125	|250	|500	|1000	|2000	|4000	|
+| - |31.5	|63	|125	|250	|500	|1000	|2000	|4000	|
 |---	|---	|---	|---	|---	|---	|---	|---	|---	|
 |Casing	|10	|7	|5	|4	|4	|4	|4	|4	|
 |Inlet	|19	|18	|17	|17	|14	|8	|3	|3	|
 |Outlet	|12	|8	|6	|6	|7	|9	|11	|15	|
 
 
-The dialogue box which accepts the inputs of turbine power, enclosure type, and which sound source (casing, inlet or exhaust) is shown below.
+The dialogue box which accepts the inputs of turbine power, enclosure type, and which sound source (casing, inlet or exhaust) is shown below. The tool also incorporates reductions for [enclosures](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions#enclosures).
+
 
 ![frmEstGasTurbine.JPG](https://github.com/Moosevellous/Trace/blob/master/img/frmEstGasTurbine.JPG)
 
@@ -202,8 +203,7 @@ From the single number SWL we can then determine octave bands by subtracting the
 
 ![frmEstSteamTurbine.JPG](https://github.com/Moosevellous/Trace/blob/master/img/frmEstSteamTurbine.JPG)
 
-The tool allows a user to make adjustments to the desired turbine inputs and displays a live sound power spectrum which will be inserted once ok is clicked.
-
+The tool allows a user to make adjustments to the desired turbine inputs and displays a live sound power spectrum which will be inserted once ok is clicked.The tool also incorporates reductions for [enclosures](https://github.com/Moosevellous/Trace/wiki/Estimator-Functions#enclosures).
 
 <a href="#">[Back to top]</a>
 
@@ -211,7 +211,7 @@ The tool allows a user to make adjustments to the desired turbine inputs and dis
 
 It is often the case that these turbines will be externally wrapped with insulation, in such cases, additional noise reductions should be taken in accordance with the table below.
 
-|Octave band centre frequency (Hz)	|Type 1a	|Type 2b	|Type 3c	|Type 4d	|Type 5e	|
+|  |Type 1a	|Type 2b	|Type 3c	|Type 4d	|Type 5e	|
 |---	|---	|---	|---	|---	|---	|
 |31.5	|2	|4	|1	|3	|6	|
 |63	|2	|5	|1	|4	|7	|
