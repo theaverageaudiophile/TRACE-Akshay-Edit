@@ -69,7 +69,7 @@ The button `Area Correction` applies the formula to all octave bands or one-thir
 # Mech Elements
 ## ASHRAE Duct
 
-`Function GetASHRAE(freq As String, W As Double, H As Double, XXX As String, L As String)`
+`Function GetASHRAEDuct(freq As String, H As Long, w As Long, DuctType As String, Length As Double)`
 
 Sound attenuation and insertion losses of sheet metal ducts are outlined in ASHRAE handbook, Chapter 48 _”Noise and Vibration Control”_. The handbook provides the insertion loss values of a given duct size at each frequency is given by:
 
