@@ -34,7 +34,7 @@ Moves row of selected cell down and applies the formatting to the old row.
 
 # Row Reference
 
-Inserts a reference to another row of the calculation, applies the *Trace Reference* Style
+Inserts a reference to another row of the calculation, applies the *Trace Reference* Style.
 
 <a href="#">[Back to top]</a>
 
@@ -78,7 +78,7 @@ Number of sources correction using the formula `10*log(n)`  with `n` input as a 
 
 # 10Log(1/t)
 
-Time correction using the formula `10*log(1/t)` with `t` input as a value in the parameter column
+Time correction using the formula `10*log(1/t)` with `t` input as a value in the parameter column.
 
 <a href="#">[Back to top]</a>
 
@@ -87,11 +87,15 @@ Time correction using the formula `10*log(1/t)` with `t` input as a value in the
 ## 1/3 to 1/1 Spectrum
 Two modes, Average and Sum. User is required to point to a cell in a `TO` or `TOA` sheet. See [SPLSUM](https://github.com/Moosevellous/Trace/wiki/Other-features#splsum) for reference.
 
+![One Third Octave Conversion Formula](https://github.com/Moosevellous/Trace/blob/master/img/TLformula.JPG)
+
+![One Third Octave Conversion Formula](https://github.com/Moosevellous/Trace/blob/master/img/frmConvert.JPG)
+
 <a href="#">[Back to top]</a>
 
 
 ## A-Weight Spectrum
-Adds the A weighting from calculation row 0 to row above.
+Adds the A weighting from calculation row 0 to row above selected row.
 
 
 <a href="#">[Back to top]</a>
