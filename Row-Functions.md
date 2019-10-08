@@ -85,11 +85,19 @@ Time correction using the formula `10*log(1/t)` with `t` input as a value in the
 
 # Convert
 ## 1/3 to 1/1 Spectrum
-Two modes, Average and Sum. User is required to point to a cell in a `TO` or `TOA` sheet. See [SPLSUM](https://github.com/Moosevellous/Trace/wiki/Other-features#splsum) for reference.
+Converts transmission loss data from one third octave bands to octave bands using the following function:
+
+`Public Function TL_ThirdsToOctave(rngInput As Range) As Variant`
+
+The formula applied is:
 
 ![One Third Octave Conversion Formula](https://github.com/Moosevellous/Trace/blob/master/img/TLformula.JPG)
 
+Note that as the Trace convention is for all loss values to be negative, the function makes negative input values positive such that the normal formula applies.
+
 ![One Third Octave Conversion Formula](https://github.com/Moosevellous/Trace/blob/master/img/frmConvert.JPG)
+
+See [SPLSUM](https://github.com/Moosevellous/Trace/wiki/Other-features#splsum) for reference.
 
 <a href="#">[Back to top]</a>
 
