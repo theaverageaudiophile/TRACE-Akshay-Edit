@@ -23,6 +23,25 @@ Absorption is assumed to be a loss and is therefore input as a negative value.
 
 <a href="#">[Back to top]</a>
 
+# ISO 9613-2:1996
+
+
+
+## Adiv
+
+<a href="#">[Back to top]</a>
+## Aatm
+
+<a href="#">[Back to top]</a>
+## Agr
+
+<a href="#">[Back to top]</a>
+
+## Abar
+TBC
+
+<a href="#">[Back to top]</a>
+
 # Distance Attenuation
 ## Point Source
 
