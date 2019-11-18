@@ -23,6 +23,8 @@ The values of a given NR curve at each frequency is given by:
 
 `NRcurve = A_f+(B_f*Curve_no)`
 
+<a href="#">[Back to top]</a>
+
 ### NRcurve
 `Function NRcurve(Curve_no As Integer, fstr As String)`
 
@@ -39,6 +41,8 @@ Some applications for various NR curves are:
 | NR 55 | Light engineering works |
 | NR 60 | Foundries, heavy engineering works |
 
+<a href="#">[Back to top]</a>
+
 # NC
 
 ## NCcurve
@@ -46,6 +50,8 @@ Some applications for various NR curves are:
 `Function NCcurve(Curve_no As Integer, fstr As String)`
 
 ![NC Curves.png](https://github.com/Moosevellous/Trace/blob/master/img/NC%20curves.png)
+
+<a href="#">[Back to top]</a>
 
 # R<sub>w </sub>
 The button 'Rw Curve' inserts two functions. The function `RwRate` finds the corresponding Rw curve for the row above. The function `RwCurve` returns the values of the curve at each octave or one-third-octave band.
@@ -65,6 +71,8 @@ The name/value of a particular curve is given by the value at the 500Hz band.
 
 ![RwCurves.png](https://github.com/Moosevellous/Trace/blob/master/img/RwCurves.png)
 
+<a href="#">[Back to top]</a>
+
 ## RwRate
 `Function RwRate(DataTable As Variant, Optional Mode As String)`
 
@@ -74,6 +82,8 @@ or
 - 10 dB (in octave bands)
 
 The function adds each band that is below the curve to `SumDeficiencies`. If the result is less than the allowable sum of deficiencies, the curve is moved up by 1dB and the process loops. Once the maximum allowable sum of deficiencies is exceeded, the curve is moved down 1dB (as this sum of deficiencies is not allowed). 
+
+<a href="#">[Back to top]</a>
 
 ## CtrRate
 
@@ -92,6 +102,14 @@ The function logarithmically subtracts the input Transmission Loss Spectrum `Dat
 
 The final C<sub>tr</sub> value is the difference between this value and the single number value (**R<sub>w</sub>, R'<sub>w</sub> D<sub>nTw</sub>** etc...). 
 
+<a href="#">[Back to top]</a>
+
+# STC - Sound Transmission Class
+
+TBC
+
+<a href="#">[Back to top]</a>
+
 # Lnw
 
 The L<sub>nw</sub> rating curve is defined in *ISO717.2 Acoustics - Rating of sound insulation in buildings and of building elements  -- Part 2: Impact sound insulation*. The standard defines a family of curves of the same shape, and the rules for rating a given set of impact sound measurements against the set of curves. 
@@ -109,6 +127,8 @@ The function adds each band that is below the curve to `SumDeficiencies`. If the
 
 ![LnwCurves](https://github.com/Moosevellous/Trace/blob/master/img/LnwCurves.png)
 
+<a href="#">[Back to top]</a>
+
 ## LnwCurve
 
 `Function LnwCurve(CurveNo As Variant, fstr As String) 'Optional Mode As String)`
@@ -118,4 +138,4 @@ The function adds each band that is below the curve to `SumDeficiencies`. If the
 |1/3 Octave Band| 62  | 62  | 62  | 62  | 62  | 62  | 61  | 60  | 59  | 58  | 57 | 54    | 51   | 48 | 45   | 42    |
 |Octave Band |    |62   |   |   |62 |  |  | 60 |  |  |  57  |  |  |48 | | |
 
-
+<a href="#">[Back to top]</a>
